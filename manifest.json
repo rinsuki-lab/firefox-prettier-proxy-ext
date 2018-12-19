@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Prettier Proxy",
+    "version": "1.0",
+    "description": "指定されたJavaScriptファイルを読み込む際にPrettierを通したJavaScriptファイルを返すようになります。",
+    "background": {
+        "scripts": [
+            "prettier-standalone.js",
+            "prettier-parser-babylon.js",
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://example.com/*"
+    ]
+}
